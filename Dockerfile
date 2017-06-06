@@ -5,6 +5,7 @@ RUN set -ex \
     && conda_pkgs=' \
         nomkl \
         scikit-learn \
+        pandas \
     ' \
     && conda install -y $conda_pkgs \
     && conda clean -i -l -t -y
